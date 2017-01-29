@@ -94,7 +94,7 @@ public:
 	defined(__AVR_ATtiny85__)	|| \
 	defined(__AVR_ATtiny2313__)	|| \
 	defined(__AVR_ATtiny4313__)
-		
+
 		switch (pin) {
 		case _AIN0:
 			/* Set PWM on pin AIN0 (Timer0, channel A) */
@@ -118,12 +118,11 @@ public:
 	defined(__AVR_ATmega16__) 	|| \
 	defined(__AVR_ATmega32__)
 
-#warning "Ups. Analog:write is not implemented for this MCU"
-	
+#warning "Ups! Analog:write is not implemented for this MCU, yet!"
+
 #endif
 	}
 
 }; /* End of class Analog */
 } /* End of namespace at */
 #endif /* MCU with ADC */
-
