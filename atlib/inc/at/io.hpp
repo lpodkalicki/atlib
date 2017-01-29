@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2015 by Lukasz Marcin Podkalicki <lukasz@podkalicki.com>
+ * Copyright (c) 2016, Lukasz Marcin Podkalicki <lpodkalicki@gmail.com>
  */
 
 #pragma once
@@ -212,7 +212,7 @@ namespace at {
 
 #define	PINNUM		(32)
 
-#endif
+#endif /* !(__AVR_ATmega16__ || __AVR_ATmega32__) */
 
 #if !(defined(__AVR_ATtiny13__) || defined(__AVR_ATtiny13A__) || defined(__AVR_ATtiny25__) || defined(__AVR_ATtiny45__) || defined(__AVR_ATtiny85__))
 
@@ -228,5 +228,5 @@ extern const uint8_t PROGMEM _pin2bitmask_PGM[];
 #define pin2port(P)	(pgm_read_byte(_pin2port_PGM+(P)))
 #define pin2bitmask(P)	(pgm_read_byte(_pin2bitmask_PGM+(P)))
 
-#endif
+#endif  /* !(__AVR_ATtiny13__ || __AVR_ATtinyX5__) */
 } /* End of namespace at */
