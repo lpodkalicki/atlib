@@ -1,10 +1,9 @@
 /**
  * Copyright (c) 2016, Łukasz Marcin Podkalicki <lpodkalicki@gmail.com>
- * Example code using driver HD44780.
+ * Example code of using driver HD44780.
  */
 
-#include "at.hpp"
-#include "at/driver/HD44780.hpp"
+#include <at/driver/HD44780.hpp>
 
 using namespace at;
 
