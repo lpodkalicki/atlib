@@ -5,10 +5,9 @@
 #include <stdint.h>
 #include <stdio.h>
 #include "at/sleep.hpp"
-#include "peripheral/HD44780.hpp"
+#include "at/driver/HD44780.hpp"
 
 using namespace at;
-using namespace at::driver;
 
 /* Pulse must be > 450ns and commands need > 37us to settle */
 #define	pulse(pin)	{(pin).high(); usleep(1); (pin).low(); usleep(100); }
