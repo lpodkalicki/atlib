@@ -4,12 +4,10 @@
 
 #pragma once
 
-extern "C" {
 #include <stdint.h>
 #include <stdbool.h>
 #include <stdlib.h>
 #include <avr/interrupt.h>
-}
 #include "at/io.hpp"
 #include "at/pin.hpp"
 

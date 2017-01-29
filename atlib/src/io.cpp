@@ -2,11 +2,9 @@
  * Copyright (c) 2016, Lukasz Marcin Podkalicki <lpodkalicki@gmail.com>
  */
 
-extern "C" {
 #include <avr/interrupt.h>
 #include <avr/pgmspace.h>
 #include <avr/io.h>
-}
 #include "at/io.hpp"
 
 

@@ -4,13 +4,12 @@
 
 #pragma once
 
-extern "C" {
 #include <stdint.h>
 #include <stdbool.h>
 #include <avr/interrupt.h>
-}
 #include "at/sleep.hpp"
 #include "at/pin.hpp"
+
 
 namespace at {
 class Digital: public Pin {

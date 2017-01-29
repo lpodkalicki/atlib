@@ -6,7 +6,8 @@
 
 #include <stdint.h>
 #include <stdbool.h>
-#include <at/digital.hpp>
+#include "at/digital.hpp"
+
 
 namespace at {
 class HD44780 {

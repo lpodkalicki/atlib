@@ -4,12 +4,11 @@
 
 #pragma once
 
-extern "C" {
 #include <stdint.h>
 #include <stdbool.h>
 #include <avr/interrupt.h>
-}
 #include "at/pin.hpp"
+
 
 #if !(defined(__AVR_ATtiny2313__) || defined(__AVR_ATtiny4313__))
 namespace at {

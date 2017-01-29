@@ -4,11 +4,10 @@
 
 #pragma once
 
-extern "C" {
 #include <stdint.h>
 #include <avr/io.h>
 #include <avr/pgmspace.h>
-}
+
 
 namespace at {
 #define	LOW		(0)
