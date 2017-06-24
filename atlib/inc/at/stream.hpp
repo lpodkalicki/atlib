@@ -15,11 +15,7 @@ public:
 	void print(const char *data) {
 		while (*data) write(*(data++));
 	}
-	void println(const char *data) {
-		print(data);
-		print("\r\n");
-	}
-	void printInteger(int value) {
+	void print(int value) {
 		char buff[10] = {0};
 		char *p = buff+8;
 		if (value < 0) {
@@ -28,6 +24,10 @@ public:
 		}
 		do { *(p--) = (value % 10) + '0'; value /= 10; } while (value);
 		print((const char *)(p+1));
+	}
+	void println(const char *data) {
+		print(data);
+		print("\r\n");
 	}
 }; /* End of class Stream */
 } /* End of namespace at */
