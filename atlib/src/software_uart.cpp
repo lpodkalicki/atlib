@@ -27,6 +27,7 @@ SoftwareUART::begin(uint32_t baudrate)
 void
 SoftwareUART::write(uint8_t data)
 {
+#if !(defined(__AVR_ATtiny13__) || defined(__AVR_ATtiny13A__) || defined(__AVR_ATtiny25__) || defined(__AVR_ATtiny45__) || defined(__AVR_ATtiny85__))
 	uint8_t i, sreg, port, bitmask;
 	volatile uint8_t *oreg;
 
@@ -56,6 +57,9 @@ SoftwareUART::write(uint8_t data)
 	_delay_loop_2(bit_delay);
 
 	SREG = sreg;		
+#else
+	#warning "SoftwareUART::write is not imeplemented for MCUs of __AVR_ATtiny13__ and __AVR_ATtinyX5__, yet!"	
+#endif  /* !(__AVR_ATtiny13__ || __AVR_ATtinyX5__) */
 }
 
 uint8_t

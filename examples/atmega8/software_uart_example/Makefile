@@ -1,5 +1,5 @@
 # --
-# Copyright (c) 2016, Lukasz Marcin Podkalicki <lpodkalicki@gmail.com>
+# Copyright (c) 2017, Lukasz Marcin Podkalicki <lpodkalicki@gmail.com>
 # --
 
 include ../mcu.in

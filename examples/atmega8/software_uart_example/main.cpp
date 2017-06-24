@@ -1,6 +1,6 @@
 /**
  * Copyright (c) 2016, Łukasz Marcin Podkalicki <lpodkalicki@gmail.com>
- * Simple blinky with delay function.
+ * Example of Software UART.
  */
 
 #include <at.hpp>
