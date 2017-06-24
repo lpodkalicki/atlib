@@ -10,8 +10,10 @@ ATLIB_DIR=../../../atlib
 ATLIB_SRC_DIR=${ATLIB_DIR}/src
 ATLIB_INC_DIR=${ATLIB_DIR}/inc
 ATLIB_SRCS=\
-        ${ATLIB_SRC_DIR}/io.cpp
-
+        ${ATLIB_SRC_DIR}/io.cpp \
+	${ATLIB_SRC_DIR}/uart.cpp \
+	${ATLIB_SRC_DIR}/software_uart.cpp
+	
 CFLAGS=-Wall -fno-exceptions -ansi --pedantic -ffunction-sections -Wl,--gc-sections -g -Os -fdata-sections -fno-threadsafe-statics -mmcu=${MCU} -DF_CPU=${F_CPU} -I. -I${ATLIB_INC_DIR}
 
 
