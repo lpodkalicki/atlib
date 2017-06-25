@@ -27,7 +27,7 @@ ACS712::read(void)
 	double result;
 	value = an.read(); 			// read ADC value
 	result = ((float)value / 1024.) * mv; 	// convert ADC value to milivolts
- 	result = (result - ACS712_OFFSET) / k;  // calculate amps
+ 	result = (ACS712_OFFSET - result) / k;  // calculate amps
 	if (result < 0)
 		return (0.0);
 	return (float)result;
