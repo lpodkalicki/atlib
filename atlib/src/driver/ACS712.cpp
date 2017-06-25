@@ -29,7 +29,7 @@ ACS712::read(void)
 	result = ((float)value / 1024.) * mv; 	// convert ADC value to milivolts
  	result = (result - ACS712_OFFSET) / k;  // calculate amps
 	if (result < 0)
-		return (0.0)
+		return (0.0);
 	return (float)result;
 }
 
